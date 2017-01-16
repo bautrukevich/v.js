@@ -88,3 +88,18 @@ describe('Testing v.url(value)', function () {
     });
   });
 });
+
+describe('Testing v.pattern(value, regExp)', function () {
+  describe('[a-z]+', function () {
+    it('should return true', () => {
+      expect(v.pattern('a', '[a-z]+')).to.be.true;
+      expect(v.pattern('a', '/[a-z]+/')).to.be.true;
+      expect(v.pattern('a', '/[a-z]+/i')).to.be.true;
+      expect(v.pattern('A', '/[a-z]+/i')).to.be.true;
+    });
+    it('should return false', () => {
+      expect(v.pattern('A', '[a-z]+')).not.to.be.true;
+      expect(v.pattern('A', '/[a-z]+/')).not.to.be.true;
+    });
+  });
+});

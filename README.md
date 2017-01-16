@@ -10,7 +10,8 @@ Available list of validators:
 - integer;
 - digits;
 - alphanumeric;
-- url.
+- url;
+- pattern (regular expression).
 
 ```js
 

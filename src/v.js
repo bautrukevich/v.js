@@ -100,3 +100,28 @@ export const url = (value) => {
     '$', 'i'
   )).test(value);
 };
+
+/**
+ * Check if value is match RegExp
+ *
+ * @param {string} value
+ * @param {string} regExp
+ * @returns {boolean}
+ */
+export const pattern = (value, regExp) => {
+  let flags = '';
+
+  // Test if RegExp is literal, if not, nothing to be done, otherwise, we need to isolate flags and pattern
+  if (/^\/.*\/(?:[gimy]*)$/.test(regExp)) {
+    // Replace the regexp literal string with the first match group: ([gimy]*)
+    // If no flag is present, this will be a blank string
+    flags = regExp.replace(/.*\/([gimy]*)$/, '$1');
+    // Again, replace the regexp literal string with the first match group:
+    // everything excluding the opening and closing slashes and the flags
+    regExp = regExp.replace(new RegExp('^/(.*?)/' + flags + '$'), '$1');
+  } else {
+    // Anchor regexp:
+    regExp = '^' + regExp + '$';
+  }
+  return (new RegExp(regExp, flags)).test(value);
+};
