@@ -1,0 +1,45 @@
+{
+  "name": "v.js",
+  "version": "0.1.0",
+  "description": "Small validation library",
+  "main": "dist/v.min.js",
+  "scripts": {
+    "build": "webpack -p --env=build",
+    "dev": "webpack-dev-server --hot --open",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "url": "https://github.com/bautrukevich/v.js.git",
+    "type": "git"
+  },
+  "author": "Siarhei Bautrukevich",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "es6",
+    "starter",
+    "library",
+    "universal",
+    "umd",
+    "commonjs",
+    "validation"
+  ],
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "eslint-loader": "^1.6.1",
+    "mocha": "^3.2.0",
+    "webpack": "beta",
+    "webpack-dev-server": "^1.16.2",
+    "yargs": "^6.6.0"
+  },
+  "dependencies": {}
+}
