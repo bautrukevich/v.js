@@ -7,7 +7,8 @@
     "build": "webpack -p --env=build",
     "dev": "webpack-dev-server --hot --open",
     "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
-    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdocrc --verbose"
   },
   "repository": {
     "url": "https://github.com/bautrukevich/v.js.git",
@@ -40,6 +41,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
+    "jsdoc": "^3.4.3",
+    "minami": "^1.1.1",
     "mocha": "^3.2.0",
     "webpack": "beta",
     "webpack-dev-server": "^1.16.2",
