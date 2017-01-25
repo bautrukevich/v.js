@@ -12,7 +12,7 @@ Available list of validators:
 - alphanumeric;
 - url;
 - pattern (regular expression);
-— phone.
+- phone.
 
 ```js
 
