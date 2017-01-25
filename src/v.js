@@ -32,6 +32,37 @@ export const compose = (funcs) => {
 export const check = expression => value => expression.test(value);
 
 /**
+ * Return RegExp object
+ * @param  {string} string Regular expression
+ * @return {object}
+ */
+export const express = expression => {
+  let flags = '';
+
+  // Test if RegExp is literal, if not, nothing to be done, otherwise, we need to isolate flags and pattern
+  if (/^\/.*\/(?:[gimy]*)$/.test(expression)) {
+    // Replace the regexp literal string with the first match group: ([gimy]*)
+    // If no flag is present, this will be a blank string
+    flags = expression.replace(/.*\/([gimy]*)$/, '$1');
+    // Again, replace the regexp literal string with the first match group:
+    // everything excluding the opening and closing slashes and the flags
+    expression = expression.replace(new RegExp('^/(.*?)/' + flags + '$'), '$1');
+  } else {
+    // Anchor regexp:
+    expression = '^' + expression + '$';
+  }
+  return (new RegExp(expression, flags));
+};
+
+/**
+ * Check if value is match RegExp. It's an alias now for check()
+ *
+ * @param {string} expression
+ * @returns {function}
+ */
+export const pattern = expression => check(express(expression));
+
+/**
  * Check if value is valid e-mail
  *
  * @param {string} value
@@ -45,7 +76,7 @@ export const email = check(new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~
  * @param {integer} value
  * @returns {boolean}
  */
-export const number = check(new RegExp(/^-?(\d*\.)?\d+(e[-+]?\d+)?$/i));
+export const number = pattern('/^-?(\\d*\\.)?\\d+(e[-+]?\\d+)?$/', 'i');
 
 /**
  * Check if value is integer
@@ -53,7 +84,7 @@ export const number = check(new RegExp(/^-?(\d*\.)?\d+(e[-+]?\d+)?$/i));
  * @param {integer} value
  * @returns {boolean}
  */
-export const integer = check(new RegExp(/^-?\d+$/));
+export const integer = pattern('/^-?\\d+$/');
 
 /**
  * Check if value is digits
@@ -61,7 +92,7 @@ export const integer = check(new RegExp(/^-?\d+$/));
  * @param {string} value
  * @returns {boolean}
  */
-export const digits = check(new RegExp(/^\d+$/));
+export const digits = pattern('/^\\d+$/');
 
 /**
  * Check if value is alphanumeric
@@ -69,7 +100,7 @@ export const digits = check(new RegExp(/^\d+$/));
  * @param {string} value
  * @returns {boolean}
  */
-export const alphanumeric = check(new RegExp(/^\w+$/i));
+export const alphanumeric = pattern('/^\\w+$/', 'i');
 
 /**
  * Check if value is valid URL
@@ -77,7 +108,7 @@ export const alphanumeric = check(new RegExp(/^\w+$/i));
  * @param {string} value
  * @returns {boolean}
  */
-export const url = check(new RegExp(
+export const url = pattern(
   '^' +
   // protocol identifier
   '(?:(?:https?|ftp)://)?' + // ** mod: make scheme optional
@@ -110,35 +141,4 @@ export const url = check(new RegExp(
   // resource path
   '(?:/\\S*)?' +
   '$', 'i'
-));
-
-/**
- * Return RegExp object
- * @param  {string} string Regular expression
- * @return {object}
- */
-export const express = expression => {
-  let flags = '';
-
-  // Test if RegExp is literal, if not, nothing to be done, otherwise, we need to isolate flags and pattern
-  if (/^\/.*\/(?:[gimy]*)$/.test(expression)) {
-    // Replace the regexp literal string with the first match group: ([gimy]*)
-    // If no flag is present, this will be a blank string
-    flags = expression.replace(/.*\/([gimy]*)$/, '$1');
-    // Again, replace the regexp literal string with the first match group:
-    // everything excluding the opening and closing slashes and the flags
-    expression = expression.replace(new RegExp('^/(.*?)/' + flags + '$'), '$1');
-  } else {
-    // Anchor regexp:
-    expression = '^' + expression + '$';
-  }
-  return (new RegExp(expression, flags));
-};
-
-/**
- * Check if value is match RegExp. It's an alias now for check()
- *
- * @param {string} expression
- * @returns {function}
- */
-export const pattern = expression => check(express(expression));
+);
