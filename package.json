@@ -45,5 +45,7 @@
     "webpack-dev-server": "^1.16.2",
     "yargs": "^6.6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "libphonenumber-js": "^0.2.31"
+  }
 }

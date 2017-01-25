@@ -11,11 +11,14 @@ Available list of validators:
 - digits;
 - alphanumeric;
 - url;
-- pattern (regular expression).
+- pattern (regular expression);
+— phone.
 
 ```js
 
-import { v as isValid } from './v';
+import { Validator } from './src/index';
+
+const isValid = new Validator();
 
 isValid.email('mail@mail.com');
 // true

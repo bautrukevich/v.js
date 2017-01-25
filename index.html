@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Load Babel -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
-    <p>Webpack-dev-server serve this file. With autoreload</p>
+  <div id="output"></div>
+
+  <script src="dist/v.min.js"></script>
+  <!-- Your custom script here -->
+  <script type="text/babel">
+    const getMessage = () => "Hello, World!";
+    document.getElementById('output').innerHTML = getMessage();
+
+    const isValid = new v();
+    console.log(isValid, isValid.email('mail@mail.com'));
+  </script>
 </body>
-<script src="dist/v.min.js"></script>
-<script type="text/babel"></script>
-</html>

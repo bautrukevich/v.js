@@ -38,14 +38,14 @@ let config = {
       },
       {
         test: /(\.jsx|\.js)$/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         exclude: /node_modules/
       }
     ]
   },
   resolve: {
-    modules: [path.join(__dirname, 'src')],
-    extensions: ['.js']
+    modules: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')],
+    extensions: ['.js', '.json']
   },
   plugins: plugins
 };
