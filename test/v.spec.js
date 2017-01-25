@@ -4,8 +4,6 @@ import * as v from '../src/v';
 chai.expect();
 const expect = chai.expect;
 
-console.log(v.email('mail@mail.com'));
-
 describe('Testing v.email(value)', function () {
   describe('mail@mail.com', function () {
     it('should return true', () => {
@@ -100,6 +98,19 @@ describe('Testing v.pattern(value, regExp)', function () {
     it('should return false', () => {
       expect(v.pattern('[a-z]+')('A')).not.to.be.true;
       expect(v.pattern('/[a-z]+/')('A')).not.to.be.true;
+    });
+  });
+});
+
+describe('Testing v.compose([func, func2])', function () {
+  describe('[func, func2]', function () {
+    it('should return true', () => {
+      const square = x => x * x;
+      const increment = x => x + 1;
+      const compose = v.compose([square, increment]);
+
+      expect(compose).to.be.a('function');
+      expect(compose(5)).to.equal(26);
     });
   });
 });
