@@ -23,7 +23,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#alphanumeric">alphanumeric</a></li><li><a href="global.html#check">check</a></li><li><a href="global.html#compose">compose</a></li><li><a href="global.html#digits">digits</a></li><li><a href="global.html#email">email</a></li><li><a href="global.html#express">express</a></li><li><a href="global.html#integer">integer</a></li><li><a href="global.html#number">number</a></li><li><a href="global.html#pattern">pattern</a></li><li><a href="global.html#phone">phone</a></li><li><a href="global.html#url">url</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Validator.html">Validator</a></li></ul><h3>Global</h3><ul><li><a href="global.html#alphanumeric">alphanumeric</a></li><li><a href="global.html#check">check</a></li><li><a href="global.html#compose">compose</a></li><li><a href="global.html#digits">digits</a></li><li><a href="global.html#email">email</a></li><li><a href="global.html#express">express</a></li><li><a href="global.html#integer">integer</a></li><li><a href="global.html#number">number</a></li><li><a href="global.html#pattern">pattern</a></li><li><a href="global.html#phone">phone</a></li><li><a href="global.html#url">url</a></li></ul>
 </nav>
 
 <div id="main">
@@ -106,12 +106,18 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         
             
-<h4 class="name" id="alphanumeric"><span class="type-signature">(constant) </span>alphanumeric<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="alphanumeric"><span class="type-signature"></span>alphanumeric<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -125,6 +131,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Alphanumeric value</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -154,7 +215,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="alphanumeric.js.html">alphanumeric.js</a>, <a href="alphanumeric.js.html#line9">line 9</a>
+        <a href="alphanumeric.js.html">alphanumeric.js</a>, <a href="alphanumeric.js.html#line14">line 14</a>
     </li></ul></dd>
     
 
@@ -170,10 +231,51 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true || false</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>alphanumeric('string123'); // true</code></pre>
+
+
+
         
             
-<h4 class="name" id="check"><span class="type-signature">(constant) </span>check<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="check"><span class="type-signature"></span>check<span class="signature">(expression)</span><span class="type-signature"> &rarr; {function}</span></h4>
+
+    
 
 
 
@@ -187,6 +289,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>expression</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>RegExp object</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -216,7 +373,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="check.js.html">check.js</a>, <a href="check.js.html#line7">line 7</a>
+        <a href="check.js.html">check.js</a>, <a href="check.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -232,10 +389,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="compose"><span class="type-signature">(constant) </span>compose<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="compose"><span class="type-signature"></span>compose<span class="signature">(funcs)</span><span class="type-signature"> &rarr; {function}</span></h4>
+
+    
 
 
 
@@ -249,6 +438,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>funcs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Array of functions to compose</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -278,7 +522,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="compose.js.html">compose.js</a>, <a href="compose.js.html#line6">line 6</a>
+        <a href="compose.js.html">compose.js</a>, <a href="compose.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -294,10 +538,46 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Returns new composite function</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="digits"><span class="type-signature">(constant) </span>digits<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="digits"><span class="type-signature"></span>digits<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -311,6 +591,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -340,7 +675,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="digits.js.html">digits.js</a>, <a href="digits.js.html#line9">line 9</a>
+        <a href="digits.js.html">digits.js</a>, <a href="digits.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -356,10 +691,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="email"><span class="type-signature">(constant) </span>email<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="email"><span class="type-signature"></span>email<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -373,6 +740,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -402,7 +824,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="email.js.html">email.js</a>, <a href="email.js.html#line9">line 9</a>
+        <a href="email.js.html">email.js</a>, <a href="email.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -418,10 +840,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="express"><span class="type-signature">(constant) </span>express<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="express"><span class="type-signature"></span>express<span class="signature">(string)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
 
 
 
@@ -435,6 +889,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>string</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Regular expression</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -464,7 +973,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="express.js.html">express.js</a>, <a href="express.js.html#line6">line 6</a>
+        <a href="express.js.html">express.js</a>, <a href="express.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -480,10 +989,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="integer"><span class="type-signature">(constant) </span>integer<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="integer"><span class="type-signature"></span>integer<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -497,6 +1038,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#integer">integer</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -526,7 +1122,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="integer.js.html">integer.js</a>, <a href="integer.js.html#line9">line 9</a>
+        <a href="integer.js.html">integer.js</a>, <a href="integer.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -542,10 +1138,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="number"><span class="type-signature">(constant) </span>number<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="number"><span class="type-signature"></span>number<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -559,6 +1187,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#integer">integer</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -588,7 +1271,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="number.js.html">number.js</a>, <a href="number.js.html#line9">line 9</a>
+        <a href="number.js.html">number.js</a>, <a href="number.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -604,10 +1287,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="pattern"><span class="type-signature">(constant) </span>pattern<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="pattern"><span class="type-signature"></span>pattern<span class="signature">(expression)</span><span class="type-signature"> &rarr; {function}</span></h4>
+
+    
 
 
 
@@ -621,6 +1336,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>expression</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -650,7 +1420,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="pattern.js.html">pattern.js</a>, <a href="pattern.js.html#line10">line 10</a>
+        <a href="pattern.js.html">pattern.js</a>, <a href="pattern.js.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -666,10 +1436,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="phone"><span class="type-signature">(constant) </span>phone<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="phone"><span class="type-signature"></span>phone<span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -683,6 +1485,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Phone number</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -712,7 +1569,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="phone.js.html">phone.js</a>, <a href="phone.js.html#line8">line 8</a>
+        <a href="phone.js.html">phone.js</a>, <a href="phone.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -728,10 +1585,42 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="url"><span class="type-signature">(constant) </span>url<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id="url"><span class="type-signature"></span>url<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -745,6 +1634,61 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
 <dl class="details">
 
     
@@ -774,7 +1718,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="url.js.html">url.js</a>, <a href="url.js.html#line9">line 9</a>
+        <a href="url.js.html">url.js</a>, <a href="url.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -790,9 +1734,35 @@
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
     
 
+
+
+        
     
 
     
@@ -810,7 +1780,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Wed Jan 25 2017 19:04:13 GMT+0300 (MSK) using the Minami theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 26 2017 11:08:49 GMT+0300 (MSK) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
