@@ -3,5 +3,7 @@
  *
  * @param {object} expression RegExp object
  * @returns {function}
+ *
+ * @function
  */
 export const check = expression => value => expression.test(value);

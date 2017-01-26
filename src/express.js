@@ -1,7 +1,10 @@
 /**
  * Return RegExp object
+ *
  * @param  {string} string Regular expression
  * @return {object}
+ *
+ * @function
  */
 export const express = expression => {
   let flags = '';

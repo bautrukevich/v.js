@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>phone.js - Documentation</title>
+    <title>index.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -28,7 +28,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">phone.js</h1>
+    <h1 class="page-title">index.js</h1>
     
 
     
@@ -38,17 +38,72 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { isValidNumber } from 'libphonenumber-js';
+            <pre class="prettyprint source linenums"><code>import { alphanumeric } from './alphanumeric';
+import { digits } from './digits';
+import { email } from './email';
+import { integer } from './integer';
+import { number } from './number';
+import { pattern } from './pattern';
+import { phone } from './phone';
 
 /**
- * Check if phone number is valid
+ * Simple validation library
  *
- * @param  {string} number Phone number
- * @return {boolean}
- *
- * @function
+ * @example
+ * const isValid = new Validator();
+ * isValid.email('mail@mail.com'); // true
  */
-export const phone = number => isValidNumber(number);
+class Validator {
+  constructor() {
+    this.name = 'v.js';
+    /**
+     * Check if value is valid alphanumeric
+     * @type {function}
+     */
+    this.alphanumeric = alphanumeric;
+
+    /**
+     * Check if value is valid digits
+     * @type {function}
+     */
+    this.digits = digits;
+
+    /**
+     * Check if value is valid e-mail
+     * @type {function}
+     */
+    this.email = email;
+
+    /**
+     * Check if value is valid integer
+     * @type {function}
+     */
+    this.integer = integer;
+
+    /**
+     * Check if value is valid number
+     * @type {function}
+     */
+    this.number = number;
+
+    /**
+     * Check if value is validated by pattern
+     * @type {function}
+     */
+    this.pattern = pattern;
+
+    /**
+     * Check if value is valid phone number
+     * @type {function}
+     */
+    this.phone = phone;
+  }
+  getName() {
+    return this.name;
+  }
+}
+
+export default Validator;
 </code></pre>
         </article>
     </section>

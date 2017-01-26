@@ -5,5 +5,7 @@ import { pattern } from './pattern';
  *
  * @param {string} value
  * @returns {boolean}
+ *
+ * @function
  */
 export const digits = pattern('/^\\d+$/');

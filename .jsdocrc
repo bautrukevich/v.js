@@ -1,7 +1,6 @@
 {
     "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
+        "allowUnknownTags": true
     },
     "source": {
         "include": ["src", "package.json", "README.md"],
@@ -12,9 +11,9 @@
         "plugins/markdown"
     ],
     "templates": {
-        "cleverLinks": false,
+        "cleverLinks": true,
         "monospaceLinks": true,
-        "useLongnameInNav": false
+        "useLongnameInNav": true
     },
     "opts": {
         "destination": "./docs/",

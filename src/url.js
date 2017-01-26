@@ -5,6 +5,8 @@ import { pattern } from './pattern';
  *
  * @param {string} value
  * @returns {boolean}
+ *
+ * @function
  */
 export const url = pattern(
   '^' +

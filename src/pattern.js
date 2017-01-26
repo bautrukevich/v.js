@@ -6,5 +6,7 @@ import { express } from './express';
  *
  * @param {string} expression
  * @returns {function}
+ *
+ * @function
  */
 export const pattern = expression => check(express(expression));

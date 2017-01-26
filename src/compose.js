@@ -1,7 +1,10 @@
 /**
  * Compose function
+ *
  * @param  {array} funcs Array of functions to compose
  * @return {function} Returns new composite function
+ *
+ * @function
  */
 export const compose = (funcs) => {
   const length = funcs ? funcs.length : 0;
