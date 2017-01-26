@@ -23,7 +23,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Validator.html">Validator</a></li></ul><h3>Global</h3><ul><li><a href="global.html#alphanumeric">alphanumeric</a></li><li><a href="global.html#check">check</a></li><li><a href="global.html#compose">compose</a></li><li><a href="global.html#digits">digits</a></li><li><a href="global.html#email">email</a></li><li><a href="global.html#express">express</a></li><li><a href="global.html#integer">integer</a></li><li><a href="global.html#number">number</a></li><li><a href="global.html#pattern">pattern</a></li><li><a href="global.html#phone">phone</a></li><li><a href="global.html#url">url</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Validator.html">Validator</a><ul class='methods'><li data-type='method'><a href="Validator.html#alphanumeric">alphanumeric</a></li><li data-type='method'><a href="Validator.html#digits">digits</a></li><li data-type='method'><a href="Validator.html#email">email</a></li><li data-type='method'><a href="Validator.html#integer">integer</a></li><li data-type='method'><a href="Validator.html#number">number</a></li><li data-type='method'><a href="Validator.html#pattern">pattern</a></li><li data-type='method'><a href="Validator.html#phone">phone</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#alphanumeric">alphanumeric</a></li><li><a href="global.html#check">check</a></li><li><a href="global.html#compose">compose</a></li><li><a href="global.html#digits">digits</a></li><li><a href="global.html#email">email</a></li><li><a href="global.html#express">express</a></li><li><a href="global.html#integer">integer</a></li><li><a href="global.html#number">number</a></li><li><a href="global.html#pattern">pattern</a></li><li><a href="global.html#phone">phone</a></li><li><a href="global.html#url">url</a></li></ul>
 </nav>
 
 <div id="main">
@@ -151,30 +151,81 @@ isValid.email('mail@mail.com'); // true</code></pre>
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         
             
-<h4 class="name" id="alphanumeric"><span class="type-signature"></span>alphanumeric<span class="type-signature"> :function</span></h4>
 
+    
+
+    <h4 class="name" id="alphanumeric"><span class="type-signature"></span>alphanumeric<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
 <div class="description">
-    <p>Check if value is valid alphanumeric</p>
+    <p>Check if value is alphanumeric</p>
 </div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<span class="param-type">function</span>
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
 
 
-        </li>
-    </ul>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Alphanumeric value</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -209,7 +260,7 @@ isValid.email('mail@mail.com'); // true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line23">line 23</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line31">line 31</a>
     </li></ul></dd>
     
 
@@ -225,10 +276,51 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true || false</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>alphanumeric('string123'); // true</code></pre>
+
+
+
         
             
-<h4 class="name" id="digits"><span class="type-signature"></span>digits<span class="type-signature"> :function</span></h4>
 
+    
+
+    <h4 class="name" id="digits"><span class="type-signature"></span>digits<span class="signature">(expression)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
@@ -238,159 +330,60 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">function</span>
-
-
-        </li>
-    </ul>
 
 
 
 
 
-<dl class="details">
 
+    <h5>Parameters:</h5>
     
 
-    
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line29">line 29</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
+        <th>Type</th>
 
         
-            
-<h4 class="name" id="email"><span class="type-signature"></span>email<span class="type-signature"> :function</span></h4>
-
-
-
-
-<div class="description">
-    <p>Check if value is valid e-mail</p>
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">function</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line35">line 35</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
 
         
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<h4 class="name" id="integer"><span class="type-signature"></span>integer<span class="type-signature"> :function</span></h4>
-
-
-
-
-<div class="description">
-    <p>Check if value is valid integer</p>
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
+                <td class="name"><code>expression</code></td>
             
-<span class="param-type">function</span>
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
 
 
-        </li>
-    </ul>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Digits</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -441,28 +434,109 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
-            
-<h4 class="name" id="number"><span class="type-signature"></span>number<span class="type-signature"> :function</span></h4>
-
-
-
-
-<div class="description">
-    <p>Check if value is valid number</p>
+<div class="param-desc">
+    <p>true || false</p>
 </div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
             
-<span class="param-type">function</span>
+
+    
+
+    <h4 class="name" id="email"><span class="type-signature"></span>email<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
-        </li>
-    </ul>
+
+<div class="description">
+    <p>Check if value is valid e-mail</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>E-mail</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -497,7 +571,7 @@ isValid.email('mail@mail.com'); // true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line47">line 47</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line51">line 51</a>
     </li></ul></dd>
     
 
@@ -513,28 +587,105 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
         
             
-<h4 class="name" id="pattern"><span class="type-signature"></span>pattern<span class="type-signature"> :function</span></h4>
 
+    
+
+    <h4 class="name" id="integer"><span class="type-signature"></span>integer<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
 
 <div class="description">
-    <p>Check if value is validated by pattern</p>
+    <p>Check if value is integer</p>
 </div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<span class="param-type">function</span>
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#integer">integer</a></span>
 
 
-        </li>
-    </ul>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Integer</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -569,7 +720,7 @@ isValid.email('mail@mail.com'); // true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line53">line 53</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line61">line 61</a>
     </li></ul></dd>
     
 
@@ -585,28 +736,109 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
-            
-<h4 class="name" id="phone"><span class="type-signature"></span>phone<span class="type-signature"> :function</span></h4>
-
-
-
-
-<div class="description">
-    <p>Check if value is valid phone number</p>
+<div class="param-desc">
+    <p>true || false</p>
 </div>
 
 
 
-    <h5>Type:</h5>
-    <ul>
-        <li>
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
             
-<span class="param-type">function</span>
+
+    
+
+    <h4 class="name" id="number"><span class="type-signature"></span>number<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
 
 
-        </li>
-    </ul>
+
+<div class="description">
+    <p>Check if value is number</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#integer">integer</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -641,7 +873,7 @@ isValid.email('mail@mail.com'); // true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line59">line 59</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line71">line 71</a>
     </li></ul></dd>
     
 
@@ -657,9 +889,341 @@ isValid.email('mail@mail.com'); // true</code></pre>
 
 
 
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
         
+<div class="param-desc">
+    <p>true || false</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
     
 
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="pattern"><span class="type-signature"></span>pattern<span class="signature">(expression)</span><span class="type-signature"> &rarr; {function}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Check if value is match RegExp. It's an alias now for check()</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>expression</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>RegExp expression</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line81">line 81</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="phone"><span class="type-signature"></span>phone<span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Check if phone number is valid</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Phone number</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line91">line 91</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>true || false</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
     
 
     
@@ -677,7 +1241,7 @@ isValid.email('mail@mail.com'); // true</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 26 2017 11:08:49 GMT+0300 (MSK) using the Minami theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Jan 26 2017 11:22:29 GMT+0300 (MSK) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
