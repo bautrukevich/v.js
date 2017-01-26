@@ -3,7 +3,7 @@ import { pattern } from './pattern';
 /**
  * Check if value is digits
  *
- * @param {string} value
+ * @param {string} value Digits
  * @returns {boolean}
  *
  * @function

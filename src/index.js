@@ -16,45 +16,77 @@ import { phone } from './phone';
 class Validator {
   constructor() {
     this.name = 'v.js';
+
     /**
-     * Check if value is valid alphanumeric
-     * @type {function}
+     * Check if value is alphanumeric
+     *
+     * @param {string} value Alphanumeric value
+     * @returns {boolean} true || false
+     *
+     * @example
+     * alphanumeric('string123'); // true
+     *
+     * @method
      */
     this.alphanumeric = alphanumeric;
 
     /**
      * Check if value is valid digits
-     * @type {function}
+     *
+     * @param {object} expression Digits
+     * @returns {boolean} true || false
+     *
+     * @method
      */
     this.digits = digits;
 
     /**
      * Check if value is valid e-mail
-     * @type {function}
+     *
+     * @param {string} value E-mail
+     * @returns {boolean}
+     *
+     * @method
      */
     this.email = email;
 
     /**
-     * Check if value is valid integer
-     * @type {function}
+     * Check if value is integer
+     *
+     * @param {integer} value Integer
+     * @returns {boolean} true || false
+     *
+     * @method
      */
     this.integer = integer;
 
     /**
-     * Check if value is valid number
-     * @type {function}
+     * Check if value is number
+     *
+     * @param {integer} value Number
+     * @returns {boolean} true || false
+     *
+     * @method
      */
     this.number = number;
 
     /**
-     * Check if value is validated by pattern
-     * @type {function}
+     * Check if value is match RegExp. It's an alias now for check()
+     *
+     * @param {string} expression RegExp expression
+     * @returns {function}
+     *
+     * @method
      */
     this.pattern = pattern;
 
     /**
-     * Check if value is valid phone number
-     * @type {function}
+     * Check if phone number is valid
+     *
+     * @param  {string} number Phone number
+     * @returns {boolean} true || false
+     *
+     * @method
      */
     this.phone = phone;
   }

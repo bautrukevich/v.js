@@ -3,7 +3,7 @@ import { check } from './check';
 /**
  * Check if value is valid e-mail
  *
- * @param {string} value
+ * @param {string} value E-mail
  * @returns {boolean}
  *
  * @function
