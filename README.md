@@ -43,3 +43,5 @@ isValid.email('@mail.com');
 // false
 
 ```
+
+[See documentation](https://bautrukevich.github.io/v.js/0.5.0)
