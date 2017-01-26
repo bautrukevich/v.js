@@ -44,4 +44,4 @@ isValid.email('@mail.com');
 
 ```
 
-[See documentation](https://bautrukevich.github.io/v.js/0.5.0)
+[See documentation](https://bautrukevich.github.io/v.js)
