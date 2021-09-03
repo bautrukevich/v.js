@@ -49,6 +49,6 @@
     "yargs": "^6.6.0"
   },
   "dependencies": {
-    "libphonenumber-js": "^0.2.31"
+    "libphonenumber-js": "^1.0.0"
   }
 }
